@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Error Fix</title>  
+        <style>
+            body
+            {
+                background: linear-gradient(45deg,blue,white,blue);
+
+            }
+            .container
+            {
+                border:2px solid black;
+                background: linear-gradient(45deg,red,black);
+               width:60px;
+            }
+            button
+            {
+                background-color: red;
+                color:white;
+                font-weight: bold;
+                border-radius: 10%;
+                box-shadow: 5px 2px 3px 1px black;
+            }
+        
+        </style>
+        <script>
+             const a=[2,3,4];
+             console.log(a);
+            document.write(" Defined ARRAY INPUT VARIABLES:"+a);
+             function fix()
+             {
+             a.push(5,6,7);
+             alert('Push the variables');
+             console.log(a);
+             document.write("Re-assigned Array Variables without Error:"+a+"<br>");
+             }
+        </script>     
+    </head>
+    <body>
+        <div class="container">
+<button onclick="fix()" id="pus">PUSH THE VARIABLES</button>
+</div>
+    </body>
+</html>
